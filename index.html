@@ -6,105 +6,209 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naveen Kumara Mallavarapu - Portfolio</title>
   <meta name="description" content="Portfolio of Naveen Kumara Mallavarapu – professional photo editor, thumbnail and poster designer, and web developer. Explore services, portfolio, and contact details.">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      text-align: center;
+      background-color: #222;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #ffc107;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ffc107;
+    }
+
+    .service, .portfolio-item {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .service:hover, .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      background-color: #222;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e0a800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #777;
+    }
+
+    .animate-typing {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #ffc107;
+      animation: typing 4s steps(40, end) infinite, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      0%, 100% { width: 0; }
+      50% { width: 100%; }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent; }
+      50% { border-color: #ffc107; }
+    }
+  </style>
 </head>
 
-<body class="bg-black text-white font-sans">
-  <!-- Header -->
-  <header class="p-6 bg-gray-900 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Naveen Kumara Mallavarapu</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-yellow-400">About</a>
-        <a href="#services" class="hover:text-yellow-400">Services</a>
-        <a href="#portfolio" class="hover:text-yellow-400">Portfolio</a>
-        <a href="#contact" class="hover:text-yellow-400">Contact</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <h1>Naveen Kumara Mallavarapu</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="py-20 text-center bg-gray-800">
-    <img src="image.jpg" alt="Naveen" class="mx-auto rounded-full mb-4 border-4 border-yellow-400">
-    <h2 class="text-4xl font-bold mb-2">Hi, I'm Naveen</h2>
-    <p class="text-xl" id="typed"></p>
+  <section class="hero">
+    <img src="image.jpg" alt="Naveen" />
+    <h2>Hi, I'm Naveen</h2>
+    <p class="animate-typing">Professional Photo Editor | Web Developer | Poster Designer</p>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-6 md:px-20 bg-gray-900">
-    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
-    <p class="text-gray-300 text-lg">I'm a creative professional with expertise in photo editing, thumbnail and banner design, and front-end web development. My work is driven by detail, creativity, and precision. I help clients elevate their brand and digital presence with visually engaging graphics and modern, responsive websites.</p>
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I'm a creative professional with expertise in photo editing, thumbnail and banner design, and front-end web development. My work is driven by detail, creativity, and precision. I help clients elevate their brand and digital presence with visually engaging graphics and modern, responsive websites.</p>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 px-6 md:px-20 bg-gray-800">
-    <h3 class="text-3xl font-semibold mb-8">Services</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Photo & Thumbnail Editing</h4>
-        <p class="text-gray-400">Professional editing for photos, YouTube thumbnails, and social media posts.</p>
-      </div>
-      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Poster & Banner Design</h4>
-        <p class="text-gray-400">Eye-catching promotional designs tailored for your brand or event.</p>
-      </div>
-      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Web Development</h4>
-        <p class="text-gray-400">Responsive websites using HTML, CSS, JS, and modern UI frameworks.</p>
-      </div>
+  <section id="services">
+    <h3>Services</h3>
+    <div class="service">
+      <h4><i class="fas fa-image"></i> Photo & Thumbnail Editing</h4>
+      <p>Professional editing for photos, YouTube thumbnails, and social media posts.</p>
+    </div>
+    <div class="service">
+      <h4><i class="fas fa-paint-brush"></i> Poster & Banner Design</h4>
+      <p>Eye-catching promotional designs tailored for your brand or event.</p>
+    </div>
+    <div class="service">
+      <h4><i class="fas fa-code"></i> Web Development</h4>
+      <p>Responsive websites using HTML, CSS, JS, and modern UI frameworks.</p>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 px-6 md:px-20 bg-gray-900">
-    <h3 class="text-3xl font-semibold mb-8">Portfolio</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <img src="p1.jpg" class="rounded-lg shadow-md" alt="Work 1">
-      <img src="p2.jpg" class="rounded-lg shadow-md" alt="Work 2">
-      <img src="p3.jpg" class="rounded-lg shadow-md" alt="Work 3">
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <div class="portfolio-item">
+      <img src="p1.jpg" class="portfolio-img" alt="Work 1">
+    </div>
+    <div class="portfolio-item">
+      <img src="p2.jpg" class="portfolio-img" alt="Work 2">
+    </div>
+    <div class="portfolio-item">
+      <img src="p3.jpg" class="portfolio-img" alt="Work 3">
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-6 md:px-20 bg-gray-800">
-    <h3 class="text-3xl font-semibold mb-4">Contact Me</h3>
-    <p class="text-gray-300 mb-6">Ready to work together? Let's connect! You can also email me directly at <a href="mailto:naveen.freelance@gmail.com" class="text-yellow-400">naveen.freelance@gmail.com</a></p>
-    <form action="https://formsubmit.co/naveen.freelance@gmail.com" method="POST" class="max-w-md space-y-4">
-      <div>
-        <label for="name" class="block text-sm text-gray-400 mb-1">Name</label>
-        <input id="name" type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white" required />
-      </div>
-      <div>
-        <label for="email" class="block text-sm text-gray-400 mb-1">Email</label>
-        <input id="email" type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white" required />
-      </div>
-      <div>
-        <label for="message" class="block text-sm text-gray-400 mb-1">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white" required></textarea>
-      </div>
-      <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded font-semibold">Send Message</button>
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <p>Ready to work together? Let's connect! You can also email me directly at <a href="mailto:naveen.freelance@gmail.com" style="color: #ffc107">naveen.freelance@gmail.com</a></p>
+    <form action="https://formsubmit.co/naveen.freelance@gmail.com" method="POST">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Your Name" required />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Your Email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-black text-gray-600">
+  <footer>
     &copy; 2025 Naveen Kumara Mallavarapu. All rights reserved.
   </footer>
-
-  <script>
-    var typed = new Typed("#typed", {
-      strings: [
-        "Professional Photo Editor",
-        "Thumbnail & Banner Designer",
-        "Creative Poster Maker",
-        "Web Developer with Coding Skills"
-      ],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
 </body>
 
 </html>
