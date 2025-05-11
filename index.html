@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naveen Kumara Mallavarapu - Portfolio</title>
+  <meta name="description" content="Portfolio of Naveen Kumara Mallavarapu – professional photo editor, thumbnail and poster designer, and web developer. Explore services, portfolio, and contact details.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="bg-black text-white font-sans">
+  <!-- Header -->
+  <header class="p-6 bg-gray-900 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Naveen Kumara Mallavarapu</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="#portfolio" class="hover:text-yellow-400">Portfolio</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 text-center bg-gray-800">
+    <img src="https://via.placeholder.com/150" alt="Naveen" class="mx-auto rounded-full mb-4 border-4 border-yellow-400">
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm Naveen</h2>
+    <p class="text-xl" id="typed"></p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 md:px-20 bg-gray-900">
+    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
+    <p class="text-gray-300 text-lg">I'm a creative professional with expertise in photo editing, thumbnail and banner design, and front-end web development. My work is driven by detail, creativity, and precision. I help clients elevate their brand and digital presence with visually engaging graphics and modern, responsive websites.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-6 md:px-20 bg-gray-800">
+    <h3 class="text-3xl font-semibold mb-8">Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Photo & Thumbnail Editing</h4>
+        <p class="text-gray-400">Professional editing for photos, YouTube thumbnails, and social media posts.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Poster & Banner Design</h4>
+        <p class="text-gray-400">Eye-catching promotional designs tailored for your brand or event.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Web Development</h4>
+        <p class="text-gray-400">Responsive websites using HTML, CSS, JS, and modern UI frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16 px-6 md:px-20 bg-gray-900">
+    <h3 class="text-3xl font-semibold mb-8">Portfolio</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="https://via.placeholder.com/300x200?text=Edited+Photo" class="rounded-lg shadow-md" alt="Work 1">
+      <img src="https://via.placeholder.com/300x200?text=Thumbnail+Design" class="rounded-lg shadow-md" alt="Work 2">
+      <img src="https://via.placeholder.com/300x200?text=Web+Project" class="rounded-lg shadow-md" alt="Work 3">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 md:px-20 bg-gray-800">
+    <h3 class="text-3xl font-semibold mb-4">Contact Me</h3>
+    <p class="text-gray-300 mb-6">Ready to work together? Let's connect! You can also email me directly at <a href="mailto:naveen.freelance@gmail.com" class="text-yellow-400">naveen.freelance@gmail.com</a></p>
+    <form action="https://formsubmit.co/naveen.freelance@gmail.com" method="POST" class="max-w-md space-y-4">
+      <div>
+        <label for="name" class="block text-sm text-gray-400 mb-1">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white" required />
+      </div>
+      <div>
+        <label for="email" class="block text-sm text-gray-400 mb-1">Email</label>
+        <input id="email" type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white" required />
+      </div>
+      <div>
+        <label for="message" class="block text-sm text-gray-400 mb-1">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white" required></textarea>
+      </div>
+      <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded font-semibold">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black text-gray-600">
+    &copy; 2025 Naveen Kumara Mallavarapu. All rights reserved.
+  </footer>
+
+  <script>
+    var typed = new Typed("#typed", {
+      strings: [
+        "Professional Photo Editor",
+        "Thumbnail & Banner Designer",
+        "Creative Poster Maker",
+        "Web Developer with Coding Skills"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
